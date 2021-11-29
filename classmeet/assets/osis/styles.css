@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  height: 100vh;
+  background: #7F7FD5;
+  background: -webkit-linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+  background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+  font-family: 'Karla', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul, li {
+  color: #fff;
+}
+
+ul, li {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.bi-small {
+  font-size: small;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+.modal-body {
+  color: #000 !important;
+}
+
+.btn-white {
+  background: #FFF;
+}
