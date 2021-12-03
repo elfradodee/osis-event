@@ -6,13 +6,9 @@
         <title>Classmeet 2021 - OSIS SMPK Santa Maria II Malang</title>
         <link rel="icon" type="image/png" href="assets/osis/logo-sekolah.png" />
         <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Custom Scripts and Styles -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/osis/styles.css" rel="stylesheet">
-        <script src="assets/osis/scripts.js" type="text/javascript"></script>
     </head>
     
     <body class="p-4">
@@ -25,103 +21,126 @@
 
             <div class="col-md-12 col-lg-8 offset-lg-2 mt-5">
 
-                <div class="form-floating mb-3">
-                    <select class="form-select" name="Kelas" id="Kelas" aria-label="Kelas" required>
-                        <option selected hidden>Kelas</option>
-                        <option value="7A">7A</option>
-                        <option value="7B">7B</option>
-                        <option value="7C">7C</option>
-                        <option value="7D">7D</option>
-                        <option value="7E">7E</option>
-                        <option value="8A">8A</option>
-                        <option value="8B">8B</option>
-                        <option value="8C">8C</option>
-                        <option value="8D">8D</option>
-                        <option value="8E">8E</option>
-                        <option value="9A">9A</option>
-                        <option value="9B">9B</option>
-                        <option value="9C">9C</option>
-                        <option value="9D">9D</option>
-                        <option value="9E">9E</option>
-                    </select>
-                    <label for="Kelas">Kelas</label>
-                </div>
-                
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" name="Ketua" id="KetuaNama" placeholder="Nama Ketua Kelas" required>
-                    <label for="KetuaNama">Nama Ketua Kelas</label>
+                <div id="alertDiv" class="d-none">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading"><i class="bi bi-check2-circle"></i> Pendaftaran Berhasil!</h4>
+                        <span>Terima kasih telah mendaftar untuk berpartisipasi dalam Classmeeting Panderman 2021!</span>
+                    </div>
+                    <a href="." class="btn btn-white col-12 p-3 mb-4 rounded-pill"><i class="bi bi-arrow-left-circle-fill"></i> Kembali ke Halaman Utama</a>
                 </div>
 
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" name="KetuaWA" id="KetuaWA" placeholder="Nomor WhatsApp Ketua Kelas" required>
-                    <label for="KetuaWA">Nomor WhatsApp Ketua Kelas</label>
-                </div>
+                <div id="formDiv">
+                    <form name="pendaftaran" method="POST" autocomplete="off">
 
-                <h4>Daftar Peserta</h4>
-                <p>
-                    Format penulisan:<br>
-                    (Kelas/Absen) Nama Lengkap - WA<br>
-                    (7F/38) Cello - 087827838900
-                </p>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="MLBB" placeholder="eSport MLBB (5 peserta)" id="eSportMLBB" style="height: 100px" required></textarea>
-                    <label for="eSportMLBB">eSport MLBB (5 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="PUBG" placeholder="eSport PUBG (4 peserta)" id="eSportPUBG" style="height: 100px" required></textarea>
-                    <label for="eSportPUBG">eSport PUBG (4 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="Pidato" placeholder="Pidato Bahasa Inggris (2 peserta)" id="Pidato" style="height: 100px" required></textarea>
-                    <label for="Pidato">Pidato Bahasa Inggris (2 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="CerdasCermat" placeholder="Cerdas Cermat (3 peserta)" id="CerdasCermat" style="height: 100px" required></textarea>
-                    <label for="CerdasCermat">Cerdas Cermat (3 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="Poster" placeholder="Poster Digital (minimal 2 peserta)" id="Poster" style="height: 100px" required></textarea>
-                    <label for="Poster">Poster Digital (minimal 2 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="ContentFest" placeholder="Content Fest (3-4 peserta)" id="ContentFest" style="height: 100px" required></textarea>
-                    <label for="ContentFest">Content Fest (3-4 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="Tiktok" placeholder="Tiktok (minimal 3 peserta)" id="Tiktok" style="height: 100px" required></textarea>
-                    <label for="Tiktok">Tiktok (minimal 3 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="Fotografi" placeholder="Fotografi (2 peserta)" id="Fotografi" style="height: 100px" required></textarea>
-                    <label for="Fotografi">Fotografi (2 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="Senam" placeholder="Senam (3 peserta)" id="Senam" style="height: 100px" required></textarea>
-                    <label for="Senam">Senam (3 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" name="BadmintonPutra" id="BadmintonPutra" placeholder="Badminton Tunggal Putra (1 peserta)" required>
-                    <label for="BadmintonPutra">Badminton Tunggal Putra (1 peserta)</label>
-                </div>
-                
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" name="BadmintonPutri" id="BadmintonPutri" placeholder="Badminton Tunggal Putri (1 peserta)" required>
-                    <label for="BadmintonPutri">Badminton Tunggal Putri (1 peserta)</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" name="BadmintonCampuran" placeholder="Badminton Ganda Campuran (1 putra, 1 putri)" id="BadmintonCampuran" style="height: 100px" required></textarea>
-                    <label for="BadmintonCampuran">Badminton Ganda Campuran (1 putra, 1 putri)</label>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="Kelas" id="Kelas" aria-label="Kelas" required>
+                                <option value="" selected hidden>Kelas</option>
+                                <option value="7A">7A</option>
+                                <option value="7B">7B</option>
+                                <option value="7C">7C</option>
+                                <option value="7D">7D</option>
+                                <option value="7E">7E</option>
+                                <option value="8A">8A</option>
+                                <option value="8B">8B</option>
+                                <option value="8C">8C</option>
+                                <option value="8D">8D</option>
+                                <option value="8E">8E</option>
+                                <option value="9A">9A</option>
+                                <option value="9B">9B</option>
+                                <option value="9C">9C</option>
+                                <option value="9D">9D</option>
+                                <option value="9E">9E</option>
+                            </select>
+                            <label for="Kelas">Kelas</label>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="Ketua" id="KetuaNama" placeholder="Nama Ketua Kelas" required>
+                            <label for="KetuaNama">Nama Ketua Kelas</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="KetuaWA" id="KetuaWA" placeholder="Nomor WhatsApp Ketua Kelas" required>
+                            <label for="KetuaWA">Nomor WhatsApp Ketua Kelas</label>
+                        </div>
+    
+                        <h4>Daftar Peserta</h4>
+                        <p>
+                            Format penulisan:<br>
+                            (Kelas/Absen) Nama Lengkap - WA<br>
+                            (7F/38) Cello - 087827838900
+                        </p>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="MLBB" placeholder="eSport MLBB (5 peserta)" id="eSportMLBB" style="height: 100px" required></textarea>
+                            <label for="eSportMLBB">eSport MLBB (5 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="PUBG" placeholder="eSport PUBG (4 peserta)" id="eSportPUBG" style="height: 100px" required></textarea>
+                            <label for="eSportPUBG">eSport PUBG (4 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Pidato" placeholder="Pidato Bahasa Inggris (2 peserta)" id="Pidato" style="height: 100px" required></textarea>
+                            <label for="Pidato">Pidato Bahasa Inggris (2 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="CerdasCermat" placeholder="Cerdas Cermat (3 peserta)" id="CerdasCermat" style="height: 100px" required></textarea>
+                            <label for="CerdasCermat">Cerdas Cermat (3 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Poster" placeholder="Poster Digital (minimal 2 peserta)" id="Poster" style="height: 100px" required></textarea>
+                            <label for="Poster">Poster Digital (minimal 2 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="ContentFest" placeholder="Content Fest (3-4 peserta)" id="ContentFest" style="height: 100px" required></textarea>
+                            <label for="ContentFest">Content Fest (3-4 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Tiktok" placeholder="Tiktok (minimal 3 peserta)" id="Tiktok" style="height: 100px" required></textarea>
+                            <label for="Tiktok">Tiktok (minimal 3 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Fotografi" placeholder="Fotografi (2 peserta)" id="Fotografi" style="height: 100px" required></textarea>
+                            <label for="Fotografi">Fotografi (2 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Senam" placeholder="Senam (3 peserta)" id="Senam" style="height: 100px" required></textarea>
+                            <label for="Senam">Senam (3 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" name="BadmintonPutra" id="BadmintonPutra" placeholder="Badminton Tunggal Putra (1 peserta)" required>
+                            <label for="BadmintonPutra">Badminton Tunggal Putra (1 peserta)</label>
+                        </div>
+                        
+                        <div class="form-floating mb-2">
+                            <input type="text" class="form-control" name="BadmintonPutri" id="BadmintonPutri" placeholder="Badminton Tunggal Putri (1 peserta)" required>
+                            <label for="BadmintonPutri">Badminton Tunggal Putri (1 peserta)</label>
+                        </div>
+    
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="BadmintonCampuran" placeholder="Badminton Ganda Campuran (1 putra, 1 putri)" id="BadmintonCampuran" style="height: 100px" required></textarea>
+                            <label for="BadmintonCampuran">Badminton Ganda Campuran (1 putra, 1 putri)</label>
+                        </div>
+    
+                        <button type="submit" id="btnSubmit" class="btn btn-primary col-12 p-3">
+                            <i class="bi bi-send"></i>
+                            Kirim Data
+                        </button>
+                        <button type="button" id="btnLoading" class="btn btn-primary col-12 p-3 d-none" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+    
+                    </form>
                 </div>
 
             </div>
@@ -129,6 +148,9 @@
             <br><br>
 
         </div>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/osis/scripts.js" type="text/javascript"></script>
 
     </body>
 </html>
